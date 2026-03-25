@@ -1,7 +1,9 @@
 :root {
     --matrix-green: #00ff41;
-    --terminal-black: rgba(10, 10, 10, 0.85);
+    --terminal-black: rgba(10, 10, 10, 0.9);
 }
+
+* { box-sizing: border-box; }
 
 body {
     background-color: #050505;
@@ -12,14 +14,14 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    overflow: hidden; /* Prevent scrollbars from matrix rain */
+    overflow: hidden;
 }
 
 #matrix {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: 1;
     opacity: 0.15;
 }
 
@@ -28,25 +30,15 @@ body {
     max-width: 900px;
     height: 70vh;
     background: var(--terminal-black);
-    backdrop-filter: blur(10px); /* Glass effect */
+    backdrop-filter: blur(10px);
     border: 1px solid rgba(0, 255, 65, 0.3);
     box-shadow: 0 0 30px rgba(0, 255, 65, 0.1);
     padding: 15px;
     display: flex;
     flex-direction: column;
     position: relative;
-    border-radius: 8px;
-}
-
-/* CRT Scanline Effect */
-#terminal::before {
-    content: " ";
-    position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
-    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%);
-    background-size: 100% 3px;
     z-index: 10;
-    pointer-events: none;
+    border-radius: 8px;
 }
 
 #terminal-header {
@@ -63,16 +55,16 @@ body {
 .red { background: #ff5f56; }
 .yellow { background: #ffbd2e; }
 .green { background: #27c93f; }
-
 .header-title { font-size: 0.8rem; opacity: 0.6; margin: 0; }
 
 #output { 
     overflow-y: auto; 
     flex-grow: 1; 
     margin-bottom: 10px;
-    scrollbar-width: thin;
-    scrollbar-color: var(--matrix-green) transparent;
+    white-space: pre-wrap;
 }
+
+#output p { margin: 5px 0; line-height: 1.4; }
 
 #input-line { display: flex; gap: 10px; align-items: center; }
 
@@ -88,4 +80,3 @@ body {
 }
 
 .prompt { color: #008f11; font-weight: bold; }
-.response { margin-bottom: 15px; line-height: 1.4; }
