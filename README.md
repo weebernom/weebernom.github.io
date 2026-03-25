@@ -4,18 +4,16 @@ A terminal-themed interactive portfolio built to showcase penetration testing pr
 
 ## 🚀 Features
 - **Interactive CLI:** A functional browser-based terminal.
-- **Security Themed:** Built with a "dark-op" aesthetic for the cybersecurity community.
+- **Security Themed:** Does it make you feel like a hacker?.
 - **Lightweight:** Zero dependencies, built with vanilla JS and CSS.
 
 ## 🛠️ Tech Stack
-- **Frontend:** HTML5, CSS3, JavaScript (ES6)
-- **Deployment:** GitHub Pages
-- **Domain:** Managed via Custom DNS
+- **Frontend:** HTML, CSS, JavaScript (ES6)
+- **Deployment:** On github. Duh
+- **Domain:** y'all though i was broke? GUESS WHAT I GOT A CUSTOM DOMAIN LMFAOAOO
 
 ## 📂 Projects Highlighted
-- **MMMSN Mess Management App:** A GIKI-specific solution.
-- **Azure Pentest Lab:** 24/7 VM configuration for security testing.
-- **Hardware Research:** Scripts and logs for Flipper Zero and Arduino.
+- **Mess Management App:** Mess in and out app (for giki only)
 
 ---
-*Maintained by Momin - Cybersecurity Student at GIKI*
+*Maintained by Momin - A Cybersecurity Student at GIKI*
