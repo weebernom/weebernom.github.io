@@ -7,21 +7,25 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+    <canvas id="matrix"></canvas>
+
     <div id="terminal">
         <div id="terminal-header">
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
-            <p>momin@giki-portfolio: ~</p>
+            <div class="dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+            </div>
+            <p class="header-title">momin@giki-portfolio: ~</p>
         </div>
         <div id="output">
-            <p class="greeting">Welcome to Momin's Cyber Portfolio. Type 'help' to see available commands.</p>
-        </div>
+            </div>
         <div id="input-line">
             <span class="prompt">u2025581@giki:~$</span>
             <input type="text" id="command-input" autofocus autocomplete="off">
         </div>
     </div>
+
     <script src="js/script.js"></script>
 </body>
 </html>
